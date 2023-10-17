@@ -1,8 +1,8 @@
-CREATE DATABASE userexample;
+CREATE DATABASE StudentsWhoSitDB;
 
-CREATE TABLE users (
+CREATE TABLE Users (
     id BIGSERIAL NOT NULL PRIMARY KEY,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    email VARCHAR(50)
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL
 );

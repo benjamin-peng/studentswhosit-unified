@@ -18,7 +18,7 @@ app.get('/getUsers', async (req: express.Request, res: express.Response) => {
     const user_firstname = 'j';
 
     try {
-        const users = await pool.query('SELECT * FROM userexample WHERE firstname = $1', [user_firstname])
+        const users = await pool.query('SELECT * FROM StudentsWhoSitDB WHERE firstname = $1', [user_firstname])
         res.json(users.rows)
 
     } catch (err) {
