@@ -1,13 +1,15 @@
-FROM node:20-alpine3.17
+FROM golang:1.21.3-bookworm
 
-RUN mkdir -p /usr/src/app
+WORKDIR /app
 
-WORKDIR /usr/src/app
+COPY go.mod go.sum ./
 
-COPY . .
+RUN go mod download && go mod verify
 
-RUN npm install
+COPY *.go ./
+
+RUN CGO_ENABLED=0 GOOS=linux go build -o /go-api
 
 EXPOSE 5000
 
-CMD ["npm", "run", "start"]
+CMD ["/go-api"]
