@@ -2,7 +2,7 @@
 A unified backend and frontend repository for the Students Who Sit website.
 
 ## Getting started with development
-This project consists of a TypeScript React frontend, a Go REST API backend, and a PostgreSQL server.
+This project consists of four containers: a TypeScript React frontend, a Go REST API backend, a PostgreSQL server, and a pgadmin container for testing the DB.
 
 In development, these components are containerized using docker compose. To use this, you'll need to install Docker's desktop client if you haven't already and have it running.
 
