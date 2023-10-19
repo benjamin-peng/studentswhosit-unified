@@ -15,6 +15,18 @@ services:
     ports:
       - 5455:5432
 
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    restart: always
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: benjamin.m.peng@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: password12345
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
   react-frontend:
     container_name: react-frontend
     build:
@@ -35,3 +47,4 @@ services:
 
 volumes:
   postgres_data:
+  pgadmin_data:
