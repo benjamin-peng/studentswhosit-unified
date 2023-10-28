@@ -39,7 +39,7 @@ const View: React.FC = () => {
         </FlexRowCenter>
         <FlexColumnCenter>
           <Description>
-            We aim to To offer reliable, affordable, and consistent child care
+            We aim to to offer reliable, affordable, and consistent child care
             for the children of Duke's faculty and staff, all while empowering
             students by providing them with a stable income in a safe,
             enriching, low-pressure environment.{" "}
