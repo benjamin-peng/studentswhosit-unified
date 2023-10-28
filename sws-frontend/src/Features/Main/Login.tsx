@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import useForm from './useForm';
+import useForm from './loginForm';
 import { FlexColumnCenter } from "../../Components/Container/FlexColumnCenter";
 import { FlexRowCenter } from "../../Components/Container/FlexRowCenter";
 import { Navbar } from "../../Components/Navbar/Navbar";
@@ -29,7 +29,7 @@ const View: React.FC = () => {
 
   return (
     <>
-      <Navbar currentPage={"signup"} />
+      <Navbar currentPage={"login"} />
       <FlexColumnCenter>
 
         <FlexRowCenter>
