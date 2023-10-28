@@ -11,14 +11,6 @@ const SubHeader = styled.h2`
   font-size: 2em;
 `;
 
-const ImageContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  background-color: #dceefb;
-  border-radius: 10px;
-`;
-
 const Description = styled.p`
   text-align: center;
   font-size: 1.2em;
