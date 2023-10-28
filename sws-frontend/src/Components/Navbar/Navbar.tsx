@@ -20,20 +20,20 @@ const Navbar: React.FC<Props> = ({ currentPage }) => {
       <NavbarLink to={"/"} current={currentPage === "main"}>
         Home
       </NavbarLink>
-      <NavbarLink to={"/signup"} current={currentPage === "signup"}>
-        Sign Up
-      </NavbarLink>
-      <NavbarLink to={"/login"} current={currentPage === "login"}>
-        Log In
-      </NavbarLink>
       <NavbarLink to={"/about"} current={currentPage === "about"}>
         About Us
+      </NavbarLink>
+      <NavbarLink to={"/getinvolved"} current={currentPage === "getinvolved"}>
+        Get Involved
       </NavbarLink>
       <NavbarLink to={"/book"} current={currentPage === "book"}>
         Book Now
       </NavbarLink>
-      <NavbarLink to={"/getinvolved"} current={currentPage === "getinvolved"}>
-        Get Involved
+      <NavbarLink to={"/login"} current={currentPage === "login"}>
+        Log In
+      </NavbarLink>
+      <NavbarLink to={"/signup"} current={currentPage === "signup"}>
+        Sign Up
       </NavbarLink>
     </NavbarDiv>
   );
