@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavbarLink } from "./NavbarLink";
+import { TextLogo, SmallTextLogo } from "../Logos/TextLogo";
 
 interface Props {
   currentPage: string;
@@ -17,6 +18,7 @@ const NavbarDiv = styled.div`
 const Navbar: React.FC<Props> = ({ currentPage }) => {
   return (
     <NavbarDiv>
+      <SmallTextLogo></SmallTextLogo>
       <NavbarLink to={"/"} current={currentPage === "main"}>
         Home
       </NavbarLink>

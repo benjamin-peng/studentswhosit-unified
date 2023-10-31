@@ -32,7 +32,6 @@ const NavbarLink: React.FC<Props> = ({ current, to, children }) => {
     from: { color: "black", fontSize: "1.3em" },
     to: {
       color: hover ? Colors.SWS_ORANGE : current ? Colors.SWS_ORANGE : "black",
-      fontSize: hover ? "1.4em" : "1.3em",
     },
     config: { duration: 120, mass: 5, friction: 90, tension: 120 },
   });
