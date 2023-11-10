@@ -19,18 +19,25 @@ const Description = styled.p`
   text-align: center;
 `;
 
+const Title = styled.h2`
+  font-size: 2em;
+  margin: 10px 0;
+`;
+
 //I need an interface for these props to work
 interface HeadcardProps {
   imageSrc: string;
+  title: string;
   description: string;
 }
 
 const Headcard: React.FC<HeadcardProps> = (props) => {
-  const { imageSrc, description } = props;
+  const { imageSrc, title, description } = props;
 
   return (
     <Card>
       <Image src={imageSrc} alt="Image" />
+      <Title>{title}</Title>
       <Description>{description}</Description>
     </Card>
   );
