@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { NavbarLink } from "./NavbarLink";
-import { TextLogo, SmallTextLogo } from "../Logos/TextLogo";
+import { SmallTextLogo } from "../Logos/TextLogo";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   currentPage: string;
@@ -15,10 +16,23 @@ const NavbarDiv = styled.div`
   box-shadow: 0 4px 2px -2px gray;
 `;
 
+const LogoContainer = styled.div`
+  height: 70%;
+  cursor: pointer;
+`
+
 const Navbar: React.FC<Props> = ({ currentPage }) => {
+
+  const navigate = useNavigate();
+  const redirect = () => {
+    navigate("/");
+  };
+
   return (
     <NavbarDiv>
-      <SmallTextLogo></SmallTextLogo>
+      <LogoContainer onClick={redirect}>
+        <SmallTextLogo></SmallTextLogo>
+      </LogoContainer>
       <NavbarLink to={"/"} current={currentPage === "main"}>
         Home
       </NavbarLink>

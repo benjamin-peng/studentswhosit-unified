@@ -4,6 +4,7 @@ import { FlexRowCenter } from "../../Components/Container/FlexRowCenter";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { Bear } from "../../Components/Logos/Bear";
 import { Colors } from "../../Config/Colors";
+import { OrangeHighlightButton } from "../../Components/Buttons/OrangeHighlightButton";
 
 const BlurbHeader = styled.p`
   font-size: 1.4em;
@@ -45,16 +46,6 @@ const ButtonContainer = styled(FlexRowCenter)`
   margin-top: 15vh;
 `;
 
-const Button = styled.div`
-  padding: 0 1em 0 1em;
-  height: 2em;
-  border: 1px solid black;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 const CenterH1 = styled.h1`
   text-align: center;
   font-weight: bolder;
@@ -92,8 +83,8 @@ const View: React.FC = () => {
           </BlurbContainer>
         </CenterContainer>
         <ButtonContainer>
-          <Button>Find a babysitter</Button>
-          <Button>Become a babysitter</Button>
+          <OrangeHighlightButton link="book">Find a babysitter</OrangeHighlightButton>
+          <OrangeHighlightButton link="getinvolved">Become a babysitter</OrangeHighlightButton>
         </ButtonContainer>
       </FlexColumnCenter>
     </>
