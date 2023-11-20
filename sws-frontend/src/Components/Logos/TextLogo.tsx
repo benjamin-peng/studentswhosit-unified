@@ -7,8 +7,8 @@ const StyledLogo = styled.img`
 `;
 
 const StyledSmallLogo = styled(SmallLogo)`
-  height: 80%;
-  width: 10%;
+  height: 100%;
+  width: 100%;
 `;
 
 const TextLogo = () => {
