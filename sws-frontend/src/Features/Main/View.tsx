@@ -83,8 +83,12 @@ const View: React.FC = () => {
           </BlurbContainer>
         </CenterContainer>
         <ButtonContainer>
-          <OrangeHighlightButton link="book">Find a babysitter</OrangeHighlightButton>
-          <OrangeHighlightButton link="getinvolved">Become a babysitter</OrangeHighlightButton>
+          <OrangeHighlightButton link="book">
+            Find a babysitter
+          </OrangeHighlightButton>
+          <OrangeHighlightButton link="getinvolved">
+            Become a babysitter
+          </OrangeHighlightButton>
         </ButtonContainer>
       </FlexColumnCenter>
     </>
