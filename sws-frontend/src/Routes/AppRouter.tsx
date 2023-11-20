@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { View as MainView } from "../Features/Main/View";
-import { View as AboutView } from "../Features/Main/AboutUs";
-import { View as GetInvolvedView } from "../Features/Main/GetInvolved";
-import { View as SignUpView } from "../Features/Main/SignUp";
-import { View as LoginView } from "../Features/Main/Login";
+import { View as AboutView } from "../Features/AboutUs/View";
+import { View as GetInvolvedView } from "../Features/GetInvolved/View";
+import { View as SignUpView } from "../Features/SignUp/View";
+import { View as LoginView } from "../Features/Login/View";
 import { Placeholder } from "../Components/Container/Placeholder";
 
 const AppRouter = () => {
